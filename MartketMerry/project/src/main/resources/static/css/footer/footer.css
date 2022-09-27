@@ -2,6 +2,9 @@
 /* 모바일용 CSS */
 
 @media (min-width:360px) and (max-width:767px ){
+    .container{
+        margin-left: 2px;
+    }
     .css-gh58u4{
         flex-wrap: wrap;
     }

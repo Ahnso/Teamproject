@@ -1,8 +1,56 @@
-@media (min-width: 992px) {.container {width: 940px;}}
-@media (min-width: 1200px) {.container {width: 1050px;}}
+/* 모바일용 반응형 */
+
+@media (min-width:360px) and (max-width:767px ){
+    .customer-service-center{
+        display: none;
+        overflow: hidden;
+    }
+    .customer-service-leftbar{
+        margin: 5%;
+
+    }
+    .input-customer-service-area{
+        padding: 0px 0px 0px 0px!important;
+        /*height: 550px!important;*/
+        width: 358px!important;
+        margin-left: 75px!important;
+        min-width: 359px!important;
+
+    }
+    .customer-service-all{
+        width: 359px!important;
+    }
+}
+/* 태블릿용 반응형 */
+
+@media (min-width:768px) and (max-width: 994px){
+.customer-service-center{
+    display: none;
+    overflow: hidden;
+}
+    .customer-service-leftbar{
+        margin: 25%;
+
+    }
+    .input-customer-service-area{
+        padding: 0px 0px 0px 0px!important;
+        height: 550px!important;
+        width: 760px!important;
+        margin-left: 75px!important;
+    }
+}
+
+/* 컴퓨터용 반응형 */
+
+@media (min-width:1132px) and (max-width:995px){
+
+
+}
+
+/*---기본 css 적용--------*/
 .customer-service-all{
     position: relative;
-    min-width: 1050px;
+    /*min-width: 1050px;*/
 }
 .input-customer-service-area{
     display: flex;
