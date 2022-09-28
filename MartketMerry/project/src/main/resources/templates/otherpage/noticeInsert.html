@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -14,8 +14,7 @@
     <link rel="icon" href="/static/img/favicon.png">
 
     <!-- 부트스트랩 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/static/css/header/nav_top.css">
     <link rel="stylesheet" type="text/css" href="/static/css/header/nav_middle.css">
     <link rel="stylesheet" type="text/css" href="/static/css/header/nav_bottom.css">
@@ -23,12 +22,11 @@
     <link rel="stylesheet" type="text/css" href="/static/css/contents/member/signUp.css">
     <link rel="stylesheet" type="text/css" href="/static/css/contents/member/login.css">
     <link rel="stylesheet" type="text/css" href="/static/css/contents/customerService.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/contents/noticeInsert.css">
     <link rel="stylesheet" type="text/css" href="/static/css/footer/footer.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/contents/checkout.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-
 
 </head>
 
@@ -203,335 +201,35 @@
 
 
 <!-- contents -->
-<div class="checkout-all">
-    <h2 class="checkout-head">
-        주문서
-    </h2>
-    <div class="checkout-body">
-        <!-----------------------주문 상품 영역----------------------------->
-        <div class="accordion accordion-flush-checkout" id="accordionFlushExample">
-            <div class="accordion-item-checkout">
-                <h2 class="accordion-header-checkout" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        주문 상품
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body-checkout">
-                        <!-- 장바구니 아이템 마켓컬리 참조-->
-                        <div class="css-bd9p1l e17a7yib9">
-                            <span class="css-atftoj e17a7yib8">
-                            </span>
-                            <span class="css-10nl60h e17a7yib7">
-                                <span class="css-1f86gv6 e17a7yib6">[풀무원] 롤 유부초밥
-                                </span>
-                            </span>
-                            <span class="css-1efb5i1 e17a7yib4">2개
-                            </span>
-                            <span class="css-1j31gob e17a7yib3">
-                                <span class="css-jnogx7 e17a7yib2">10,590원
-                                </span>
-                                <span class="css-zj7oe6 e17a7yib1">12,760원
-                                </span>
-                            </span>
-                        </div>
-                        <div class="css-bd9p1l e17a7yib9">
-                            <span class="css-wm64j e17a7yib8">
-                            </span>
-                            <span class="css-10nl60h e17a7yib7">
-                                <span class="css-1f86gv6 e17a7yib6">[KF365] 양념 소불고기 1kg (냉장)
-                                </span>
-                            </span>
-                            <span class="css-1efb5i1 e17a7yib4">1개
-                            </span>
-                            <span class="css-1j31gob e17a7yib3">
-                                <span class="css-jnogx7 e17a7yib2">16,990원
-                                </span>
-                                <span class="css-zj7oe6 e17a7yib1">18,990원
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+<div class="customer-service-all">
+    <div class="input-customer-service-area">
+        <!-- contents leftbar -->
+        <div class="customer-service-leftbar">
+            <div class="customer-service-leftbar-title">
+                고객센터
             </div>
-        </div>
-<!--        주문 상품 요약 div -->
-        <div class="products-info">
-            <span class="product-name">[풀무원] 롤 유부초밥 외 </span><span class="products-EA"> 1개를 </span><span class="product-span">주문합니다.</span>
-        </div>
-<!-- -------------------------------------------------------->
-<!---------------------------주문자 정보란 -------------------------->
-        <div class="checkout-userInfo-head-area">
-            <h3 class="checkout-userInfo-head">
-                주문자 정보
-            </h3>
-        </div>
-
-        <div class="checkout-userInfo-body">
-            <!-- 보내는분 정보-->
-            <div class="css-1tq1t75 e150alo82">
-                <span class="css-ln1csn e150alo81">보내는 분</span>
-                <div class="css-82a6rk e150alo80">
-                    <div class="css-t6o2y8 e1vfdada2">
-                        김준석
-                    </div>
-                </div>
-            </div>
-            <!-- 휴대폰 정보-->
-            <div class="css-1tq1t75 e150alo82">
-                <span class="css-ln1csn e150alo81">휴대폰
-                </span>
-                <div class="css-82a6rk e150alo80">
-                    <div class="css-t6o2y8 e1vfdada2">010-0157-7777
-                    </div>
-                </div>
-            </div>
-            <!-- 이메일 정보-->
-            <div class="css-1tq1t75 e150alo82">
-                <span class="css-ln1csn e150alo81">이메일
-                </span>
-                <div class="css-82a6rk e150alo80">kjshelp@merry.com
-                    <div class="css-1r0yqr6 e1vfdada1">
-                        <p class="css-i7dt79 e1vfdada0">이메일을 통해 주문처리과정을 보내드립니다.
-                        </p>
-                        <p class="css-i7dt79 e1vfdada0">정보 변경은 MyMerry &gt; 개인정보 수정 메뉴에서 가능합니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!----------------------------배송지 정보란-------------------------------------->
-        <div class="checkout-shippingInfo-head-area">
-            <h3 class="checkout-shippingInfo-head">
-                배송지 정보
-            </h3>
-        </div>
-        <!--배송지 -->
-        <div class="checkout-shippingInfo-body-area">
-            <div class="checkout-shippingInfo-body">
-                <span class="css-ln1csn e150alo81">배송지
-                </span>
-                <div class="css-82a6rk e150alo80">
-                    <span class="css-3uygi7 e17yjk9v1">기본배송지
-                    </span>
-                    <p class="checkout-shipping-address">충청남도 천안시 동남구 대흥동 134 휴먼교육센터 8층 4교육실
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- 배송지 디테일 info-->
-        <div id="checkout-shipping-details" class="css-1y0xj4c e1pxan881">
-            <div class="css-18oykim e150alo82">
-                <span class="css-ln1csn e150alo81">상세 정보
-                </span>
-                <div class="css-82a6rk e150alo80">
-                    <div class="css-1p5vzx4 e14u1xpe0">김준석, 010-0157-7777
-                    </div>
-                    <div>
-                        <span class="css-7unc75 efthce40">문 앞
-                         </span>
-                        <span class="css-4jyz7e efthce40">자유 출입 가능
-                        </span>
-                    </div>
-                    <div class="css-1soh0gv efthce41">
-                        <span class="css-7unc75 efthce40">배송완료 메시지
-                        </span>
-                        <span class="css-4jyz7e efthce40">배송 직후
-                        </span>
-                    </div>
-                    <div class="css-iqoq9n e1pxan880">
-                        <button class="css-117jo2j e4nu7ef3" type="button" width="60" height="30" radius="3">
-                            <span class="css-ymwvow e4nu7ef1">수정
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--  -----------------------쿠폰/적립금 및 최종 결제금액-------------------------------------->
-      <div class="css-4c6dm7 epvroj93">
-        <!--쿠폰 / 적립금 -->
-        <div class="checkout-couponOrPoint-area">
-            <div class="checkout-couponOrPoint-head-area">
-                <h3 class="checkout-couponOrPoint-head">
-                    쿠폰 / 적립금
-                </h3>
-            </div>
-
-        <!-- 쿠폰 적용 칸 -->
-            <div class="checkout-useCoupon-area">
-                <span class="css-ln1csn e150alo81">쿠폰 적용</span>
-                <div class="css-82a6rk e150alo80">
-                        <!--쿠폰 적용 버튼-->
-                    <div class="dropdown-coupon">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            사용가능 쿠폰 <span class="able-coupon-EA"> 1 장</span> / <span class="all-coupon-EA"> 2 장</span>
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" id="dropdown-coupon1" >쿠폰 적용 안함</a></li>
-                            <li><a class="dropdown-item" id="dropdown-coupon2">5000원 할인(중복불가)</a></li>
-                            <li><a class="dropdown-item" id="dropdown-coupon3">5000원 할인(중복불가)</a></li>
-                        </ul>
-                    </div>
-                  </div>
-             </div>
-
-        <!--  적립금 적용 칸 -->
-             <div class="checkout-usePoint-area">
-                 <span class="css-ln1csn e150alo81">적립금 적용</span>
-
-        <!--  적립금 적용 내용칸   -->
-                <div class="css-82a6rk e150alo80">
-                   <div class="css-zjik7 e1gm2j0y2">
-                       <div class="css-1jg3w69 e1uzxhvi6">
-                            <div height="44" class="css-t7kbxx e1uzxhvi3">
-                             <input data-testid="input-box" name="point-usage" placeholder="0" type="text" height="44" class="css-n2am0u e1uzxhvi2" value="0">
-                            </div>
-                       </div>
-                        <button class="css-197i5eo e4nu7ef3" type="button" width="100" height="44" radius="3">
-                            <span class="css-ymwvow e4nu7ef1">모두사용
-                            </span>
-                        </button>
-                   </div>
-                   <div class="css-5417ai e1gm2j0y1">사용가능 적립금
-                        <strong class="css-1q8axr4 e1gm2j0y0">9,416
-                        </strong>원
-                   </div>
-                   <div class="css-qubry4 ezr038b1">
-                        <p class="css-986r2u ezr038b0">적립금 내역: My Merry &gt; 적립금
-                        </p>
-                   </div>
-                </div>
-             </div>
-        </div>
-<!-------------------------------------------최종 결제 주문서--------------------------------------->
-         <div class="css-1rz7w0y epvroj91">
-             <div class="css-9i9om4 epvroj90">
-                 <div class="css-6hge48 edbbr7c2">
-                     <h3 class="css-1ddzp0m edbbr7c1">결제 금액</h3>
-                 </div>
-                 <div class="css-hdnk73 e12lli9y0">
-                     <div class="css-11quaim eahaaoi10">
-                         <div class="css-yct5co eahaaoi9">주문금액</div>
-                         <div><span class="css-2pg1ps eahaaoi8"><span class="css-rfpchb eahaaoi1"></span>
-                             109,085</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-1d81lpa eahaaoi7">
-                         <div class="css-yct5co eahaaoi9">상품금액</div>
-                         <div>
-                             <span class="css-2pg1ps eahaaoi8">
-                                 <span class="css-rfpchb eahaaoi1"></span>
-                                 119,750</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-1d81lpa eahaaoi7">
-                         <div class="css-yct5co eahaaoi9">상품할인금액</div>
-                         <div><span class="css-2pg1ps eahaaoi8"><span class="css-rfpchb eahaaoi1">-</span>10,665</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-1bj5qaf eahaaoi10">
-                         <div class="css-yct5co eahaaoi9">배송비</div>
-                         <div>
-                             <span class="css-2pg1ps eahaaoi8">
-                                 <span class="css-rfpchb eahaaoi1"></span>
-                                 0</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-1bj5qaf eahaaoi10">
-                         <div class="css-yct5co eahaaoi9">쿠폰할인</div>
-                         <div class="css-0"><span class="css-2pg1ps eahaaoi8">
-                             <span class="css-rfpchb eahaaoi1"></span>
-                             0</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-1bj5qaf eahaaoi10">
-                         <div class="css-yct5co eahaaoi9">적립금사용</div>
-                         <div class="css-37wf0k"><span class="css-2pg1ps eahaaoi8"><span class="css-rfpchb eahaaoi1"></span>0
-                         </span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-gs4y0w eahaaoi5">
-                         <div class="css-yct5co eahaaoi9">최종결제금액</div>
-                         <div>
-                             <span class="css-2pg1ps eahaaoi8">
-                                 <span class="css-rfpchb eahaaoi1"></span>
-                                 109,085</span>
-                             <span class="css-vu318a eahaaoi6">원</span>
-                         </div>
-                     </div>
-                     <div class="css-i93a3v eahaaoi3">
-                        ( 최종 결제 금액의 3% 적립)</div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-<!-- ------------------------------------------------------------------------------->
-<!------------------정보 수집/ 제공 칸------------------------------>
-        <!---------정보수집 / 제공 란 head-->
-        <div class="checkout-lastcheck-head-area">
-            <h3 class="checkout-lastcheck-head">개인정보 수집/제공</h3>
-        </div>
-        <div class="css-1p5x2k5 e1txfng41">
-            <label class="css-qihf5m e1dcessg1" for="terms-agree">
-                <input id="terms-agree" type="checkbox" class="css-agvwxo e1dcessg0">
-<!--                <img src="/static/img/precheck.svg" class="css-1wfsi82 e31wziv0">-->
-                결제 진행 필수 전체 동의
-            </label>
-            <div class="css-de9hf ewp15qx2"><p class="css-1dospxl ewp15qx1">
-            <label class="css-10sm099 e1dcessg1" for="terms-agree-personal-info">
-                <input id="terms-agree-personal-info" type="checkbox" class="css-agvwxo e1dcessg0">
-<!--                <img src="/static/img/precheck.svg" class="css-1wfsi82 e1rqawiz0">-->
-            </label>
-            <span class="css-1isbd8x ewp15qx0">(필수) 개인정보 수집∙이용 및 처리 동의</span>
-        </p>
-            <p class="css-1dospxl ewp15qx1">
-            <label class="css-10sm099 e1dcessg1" for="terms-agree-personal-info-third-party">
-                <input id="terms-agree-personal-info-third-party" type="checkbox" class="css-agvwxo e1dcessg0">
-<!--                <img src="/static/img/precheck.svg"class="css-1wfsi82 e1rqawiz0">-->
-            </label>
-                <span class="css-1isbd8x ewp15qx0">(필수) 개인정보 제3자 제공 동의</span>
-            </p>
-                <p class="css-1dospxl ewp15qx1">
-                    <label class="css-10sm099 e1dcessg1" for="terms-agree-electronic-payment-agent">
-                        <input id="terms-agree-electronic-payment-agent" type="checkbox" class="css-agvwxo e1dcessg0">
-<!--                        <img src="/static/img/precheck.svg" class="css-1wfsi82 e1rqawiz0"></label>-->
-                    </label>
-                        <span class="css-1isbd8x ewp15qx0">(필수) 전자지급 결제대행 서비스 이용약관 동의</span>
-                </p>
-            </div>
-        </div>
-<!-------------------결제하기 버튼---------------------->
-        <div class="css-1azakc el0c5j41">
-            <button class="css-1lha8en e4nu7ef3" type="button" width="240" height="56" radius="3">
-                <span class="css-ymwvow e4nu7ef1">109,085원 결제하기</span>
-            </button>
+            <ul class="customer-service-leftbar-body" style="padding-left:0;">
+                <li class="customer-service-leftbar-li-menu">
+                    <a class="customer-service-leftbar-first-a">공지사항
+                        <span class="customer-service-leftbar-img"></span>
+                    </a>
+                </li>
+                <li class="customer-service-leftbar-li-menu">
+                    <a class="customer-service-leftbar-first-a">자주하는 질문
+                        <span class="customer-service-leftbar-img"></span>
+                    </a>
+                </li>
+                <li class="customer-service-leftbar-li-menu">
+                    <a class="customer-service-leftbar-first-a">1:1문의
+                        <span class="customer-service-leftbar-img"></span>
+                    </a>
+                </li>
+            </ul>
         </div>
 
+<!-- contents -->
 
 
-
-
-
-
-
-
-<!-- -----------checkout-body /div-------------->
-         </div>
-
-      </div>
-
-
-    </div>
-</div>
-<!--</div>-->
 
 
 
@@ -692,13 +390,15 @@
     </div>
     <a href="#header" class="css-1t4sf6y">맨 위로가기</a>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
-        ;></script>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
 
@@ -706,7 +406,7 @@
             prevEl: '.swiper-button-prev',
             nextEl: '.swiper-button-next',
         },
-    })
+    });
 </script>
 <script>
     var innerSlider = $('.inner-slider');

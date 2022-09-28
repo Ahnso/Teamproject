@@ -628,6 +628,32 @@
         padding: 20px 0px;
         border-bottom: 1px solid rgb(244, 244, 244);
     }
+    .css-qihf5m{
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        vertical-align: top;
+        line-height: normal;
+        color: rgb(51, 51, 51);
+        padding: 0px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    input[type=checkbox], input[type=radio] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .css-agvwxo {
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0px, 0px, 0px, 0px);
+        clip-path: inset(50%);
+        width: 1px;
+        height: 1px;
+     }
+
 /*-------결제하기 버튼---------*/
     .css-1lha8en {
         display: block;
@@ -647,8 +673,18 @@
     .css-1azakc {
         text-align: center;
     }
-
-
+    input[type="checkbox"]+label {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('/static/img/precheck.svg') no-repeat 0 0px / contain!important;
+    }
+    input[type='checkbox']:checked+label {
+        background: url('/static/img/img_success_order_end.png') no-repeat 0 1px / contain!important;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
 
 
 
