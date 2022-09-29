@@ -60,15 +60,15 @@ public class Member {
 
     @Column(name = "member_year")
     @Pattern(regexp = "(?=.*[0-9]).{4}", message = "생년월일을 다시 확인해주세요.")
-    private String year;
+    private String birthYear;
 
     @Column(name = "member_month")
     @Pattern(regexp = "(?=.*[0-9]).{2}", message = "생년월일을 다시 확인해주세요.")
-    private String month;
+    private String birthMonth;
 
     @Column(name = "member_date")
     @Pattern(regexp = "(?=.*[0-9]).{2}", message = "생년월일을 다시 확인해주세요.")
-    private String date;
+    private String birthDate;
 
 
 }

@@ -199,7 +199,7 @@
 <!--    </header>-->
 <!--</div>-->
 
-<form th:action="@{login_corporateMember}" method="post" >
+<form th:action="@{/contents/member/login_corporateMember}" method="post" >
 <!-- contents -->
 <div class="signup-all">
     <!-- 회원가입 타이틀 -->
@@ -221,7 +221,7 @@
                     </label>
                 </div>
                 <div class="input-id-center">
-                    <input data-testid="input-box" id="member.id" name="member.id" placeholder="아이디를 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
+                    <input data-testid="input-box" id="input-id" name="id" placeholder="아이디를 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
                 </div>
                 <div class="input-id-rightBtn">
                     <button class="id-duplchkBtn">
@@ -237,7 +237,7 @@
                     </label>
                 </div>
                 <div class="input-pw-center">
-                    <input data-testid="input-box" id="memberPw1" name="memberPw" placeholder="비밀번호를 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value >
+                    <input data-testid="input-box" id="input-pw" name="password" placeholder="비밀번호를 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value >
                 </div>
 
             </div>
@@ -249,7 +249,7 @@
                     </label>
                 </div>
                 <div class="input-pw-center">
-                    <input data-testid="input-box" id="memberPw2" name="memberPw" placeholder="비밀번호를 한번 더 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
+                    <input data-testid="input-box" id="input-pw2" name="password" placeholder="비밀번호를 한번 더 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
                 </div>
             </div>
             <!-- 이름칸 -->
@@ -260,7 +260,7 @@
                     </label>
                 </div>
                 <div class="input-name-center">
-                    <input data-testid="input-box" id="memberName" name="memberName" placeholder="이름을 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
+                    <input data-testid="input-box" id="input-name" name="name" placeholder="이름을 입력해주세요" type="text" required class="css-1bkd15f e1uzxhvi2" value>
                 </div>
 
             </div>
@@ -272,7 +272,7 @@
                     </label>
                 </div>
                 <div class="input-email-center">
-                    <input data-testid="input-box" id="memberEmail" name="memberEmail" placeholder="예:marketberry@berry.com" type="text" required class="css-1bkd15f e1uzxhvi2" value>
+                    <input data-testid="input-box" id="input-email" name="email" placeholder="예:marketberry@berry.com" type="text" required class="css-1bkd15f e1uzxhvi2" value>
                 </div>
                 <div class="input-email-rightBtn">
                     <button class="email-duplchkBtn">
@@ -370,7 +370,7 @@
                         </div>
                         <span class="css-iehpfx e1ke3ehm0"></span>
                         <div class="css-1dkwuq4 e1uzxhvi6"><div height="40" class="css-xsmgyi e1uzxhvi3">
-                            <input data-testid="input-box" name="member.date" placeholder="DD" type="text" height="40" class="css-1368454 e1uzxhvi2" value>
+                            <input data-testid="input-box" name="date" placeholder="DD" type="text" height="40" class="css-1368454 e1uzxhvi2" value>
                         </div>
                         </div>
                         <!-- </div>-->
@@ -459,7 +459,7 @@
     <!-- 가입하기 버튼 -->
     <div class="css-137ca2h e1utgeno0">
         <button class="css-18m884r e4nu7ef3" type="submit" width="240" height="56" radius="3">
-            <span class="css-ymwvow e4nu7ef1" th:href="@{/login_corporateMember}">가입하기</span>
+            <span class="css-ymwvow e4nu7ef1" th:href="@{/contents/member/login_corporateMember}">가입하기</span>
         </button>
     </div>
 </div>

@@ -39,7 +39,7 @@ public class memberController {
         System.out.println("핸드폰 :"+member.getPhone());
         System.out.println("주소 :"+member.getAddress());
         System.out.println("성별 : "+member.getGender());
-        System.out.println("생년월일 : " + member.getYear());
+        System.out.println("생년월일 : " + member.getBirthYear());
         Member insertMember = new Member(
                 member.getId(),
                 member.getPassword(),
@@ -48,9 +48,9 @@ public class memberController {
                 member.getPhone(),
                 member.getAddress(),
                 member.getGender(),
-                member.getYear(),
-                member.getMonth(),
-                member.getDate()
+                member.getBirthYear(),
+                member.getBirthMonth(),
+                member.getBirthDate()
         );
         model.addAttribute("member", insertMember);
         return "contents/member/signUp_generalMember";
@@ -69,7 +69,9 @@ public class memberController {
         System.out.println("핸드폰 :"+member.getPhone());
         System.out.println("주소 :"+member.getAddress());
         System.out.println("성별 : "+member.getGender());
-        System.out.println("생년월일 : " + member.getYear());
+        System.out.println("생일년도 : " + member.getBirthYear());
+        System.out.println("생일월 : " + member.getBirthMonth());
+        System.out.println("생일날짜 : " + member.getBirthDate());
         //@Valid : 클라이언트 입력 데이터가 dto클래스로 캡슐화되어 넘어올 때, 유효성을 체크하라는 어노테이션
         //Member에서 작성한 어노테이션을 기준으로 유효성 체크
         //여기서 Errors객체는 Member의 필드 유효성 검사 오류에 대한 정보를 저장하고 노출한다.
@@ -90,17 +92,17 @@ public class memberController {
                 model.addAttribute(key, member_Availability.get(key));
             }
             //유효성을 통과하지 못할 경우 회원가입 페이지를 리턴
-            return "contents/member/signUp_generalMember";
+            return "/contents/member/signUp_generalMember";
         }
         //유효성 검사를 통과하고 난 이후의 페이지로 이동
 
         Member findMember = memberService.getMemberWhereId(member.getId());
         if(findMember != null){
             System.out.println("중복 된 아이디 입니다.");
-            return "contents/member/signUp_generalMember";
+            return "/contents/member/signUp_generalMember";
         }else{
             memberService.insertMember(member);
-            return "contents/member/login_corporateMember";
+            return "/contents/member/login_corporateMember";
         }
 
     }
@@ -125,9 +127,9 @@ public class memberController {
                 member.getPhone(),
                 member.getAddress(),
                 member.getGender(),
-                member.getYear(),
-                member.getMonth(),
-                member.getDate()
+                member.getBirthYear(),
+                member.getBirthMonth(),
+                member.getBirthDate()
         );
         model.addAttribute("member", insertMember);
         return "회원 수정 페이지";
@@ -145,7 +147,9 @@ public class memberController {
         System.out.println("핸드폰 :"+member.getPhone());
         System.out.println("주소 :"+member.getAddress());
         System.out.println("성별 : "+member.getGender());
-        System.out.println("생년월일 : " + member.getYear());
+        System.out.println("생일년도 : " + member.getBirthYear());
+        System.out.println("생일월 : " + member.getBirthMonth());
+        System.out.println("생일날짜 : " + member.getBirthDate());
         //@Valid : 클라이언트 입력 데이터가 dto클래스로 캡슐화되어 넘어올 때, 유효성을 체크하라는 어노테이션
         //Member에서 작성한 어노테이션을 기준으로 유효성 체크
         //여기서 Errors객체는 Member의 필드 유효성 검사 오류에 대한 정보를 저장하고 노출한다.
@@ -192,10 +196,10 @@ public class memberController {
             && findMember.getPassword().equals(member.getPassword())){
             model.addAttribute("member", findMember);
             System.out.println("로그인 성공!!!");
-            return "main/idex";
+            return "/init/index";
         }else{
             System.out.println("아이디, 비밀번호를 다시 입력해주세요!");
-            return "contents/member/login_corporateMember";
+            return "/contents/member/login_corporateMember";
         }
     }
     @GetMapping("로그아웃")
