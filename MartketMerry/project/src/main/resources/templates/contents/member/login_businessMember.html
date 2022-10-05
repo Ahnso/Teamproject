@@ -209,19 +209,20 @@
     <div class="login-body">
         <form class="form-signin">
             <div class="inputId">
-                <input type="email" id="inputEmail" class="form-control" placeholder="아이디를 입력해주세요" required autofocus>
+                <input type="email" name="memberId" id="inputEmail" class="form-control" placeholder="아이디를 입력해주세요" required autofocus>
             </div>
             <div class="inputPw">
-                <input type="password" id="inputPassword" class="form-control" placeholder="비밀번호를 입력해주세요" required>
+                <input type="password" name="memberPassword" id="inputPassword" class="form-control" placeholder="비밀번호를 입력해주세요" required>
             </div>
             <div class="findIdOrPw">
                 <a class="findId">아이디 찾기</a>
                 <span class="spanBar">|</span>
                 <a class="findPw">비밀번호 찾기</a>
             </div>
-            <button class="login-btn" type="submit">로그인</button>
-            <button class="signup-btn" type="submit">일반 회원가입</button>
-            <button class="signup-btn" type="submit">사업자 회원가입</button>
+            <button class="login-btn" type="submit" th:href="@{/contents/member/main}">로그인</button>
+            <button class="signup-btn" type="submit" th:href="@{/contents/member/signUp}">일반 회원가입</button>
+<!--            나중에 사업자 회원가입 페이지로 경로 변경하기-->
+            <button class="signup-btn" type="submit" th:href="@{/contents/member/signUp}">사업자 회원가입</button>
 
         </form>
     </div>
